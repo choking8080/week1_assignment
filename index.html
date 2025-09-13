@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="reset.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>자기소개 | 조영민</title>
+  <link rel="stylesheet" href="reset.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">조영민</h1>
+      <p class="site-subtitle">컴퓨터공학부 · 24학번</p>
+      <nav class="site-nav">
+        <a href="#about">자기소개</a>
+        <a href="#interests">주류소개</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section container">
+      <h2>소개</h2>
+      <p>
+        안녕하세요! 컴퓨터공학부의 조영민이라고 합니다. 이번학기 개발에 입문해보고 싶어 동아리에 지원했습니다. 컴공 2학년이지만 흥청망청 살아서 아직까지 개발 경험은 없습니다...
+        취미로 칵테일을 만들고, 다양한 술을 시음합니다. 와인을 가장 좋아해요. 사실 이 페이지도 살짝 마시면서 작업했습니ㄷr...밑에 버튼으로 페이지에 와인을 채워보세요 ㅎㅎ
+      </p>
+      <ul class="info-list">
+        <li><strong>이름</strong> : 조영민</li>
+        <li><strong>학과</strong> : 컴퓨터공학부</li>
+        <li>24학번, 2005년생</li>
+        <li><strong>이메일</strong> : choking8080@snu.ac.kr</li>
+      </ul>
+    </section>
+
+    <section id="interests" class="section container">
+      <h2>술과 함께</h2>
+      <p class="muted">제가 좋아하는 술의 소개입니다</p>
+      <div class="card-grid">
+        <article class="card">
+          <img src="RedWine.jpg" alt="와인 이미지" />
+          <div class="card-body">
+            <h3>레드 와인 (Red Wine)</h3>
+            <p>드라이하고, 여운이 긴 스타일을 좋아합니다. 적은 타닌감의 피노누아 품종을 가장 좋아하고, 생산지는 프랑스에 가장 관심이 있습니다. 요즘은 샹볼 뮈지니(Chambolle Musigny) 를 가장 좋아해요.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="whisky.jpg" alt="위스키 이미지" />
+          <div class="card-body">
+            <h3>위스키 (Whisky)</h3>
+            <p>다양한 캐스크를 가리지 않지만, 최근 셰리에 빠졌습니다. 와인만큼 열심히 공부하지는 않지만, 최근 열심히 병을 모아보려 하고 있어요. 위스키는 아니지만, 브랜디도 매우 좋아해요.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="beer.jpg" alt="맥주 이미지" />
+          <div class="card-body">
+            <h3>맥주 (Beer)</h3>
+            <p>와인이랑 비슷한 이유로 좋아하는 것 같습니다. 음식에 너무 잘어울리고, 비증류주이기에, 각각의 개성이 너무 다양해서 재밌어요. 에일 계열을 좋아해요. 최근 다양한 크래프트 브루어리도 탐험해보려 하고 있습니다.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="cocktail.jpg" alt="칵테일 이미지" />
+          <div class="card-body">
+            <h3>칵테일 (cocktail)</h3>
+            <p>어쩌다가 집에서 혼자 칵테일을 만들어먹기 시작했었는데, 최근 흥미를 잃었었습니다. 그러다가, 청담동의 한 바를 방문해보고, 만드는 기술에 따라 놀랍도록 맛이 변한다는 걸 깨닫고, 활활 타오르기 시작했어요. 책도 구매해서 읽는중입니다. 가장 좋아하는 칵테일은 사이드카.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+  <canvas id="wineCanvas" aria-hidden="true"></canvas>
+
+
+  <button id="pourBtn" class="pour-btn" aria-controls="wineCanvas" aria-pressed="false">
+    🍷 따르기
+  </button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> YoungminCho. All rights reserved.</small>
+    </div>
+  </footer>
+
   <script src="index.js"></script>
+</body>
 </html>
